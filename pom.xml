@@ -90,7 +90,7 @@
                <testFailureIgnore>true</testFailureIgnore>
                <runOrder>alphabetical</runOrder>
                <redirectTestOutputToFile>false</redirectTestOutputToFile>
-               <argLine>-Djava.library.path=${basedir}/bin/</argLine>
+               <argLine>-Djava.library.path=${basedir}/bin/ -Xcheck:jni</argLine>
             </configuration>
          </plugin>
 
