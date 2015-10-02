@@ -40,10 +40,6 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved) {
            return JNI_ERR;
         }
 
-        // This following line works fine on Sun JDK and generates a core dumped on IBM JDK
-        callbackMethod = (jmethodID)(*env)->NewGlobalRef(env, (jobject)callbackMethod);
-
-
         return JNI_VERSION_1_6;
     }
 }
